@@ -1,0 +1,32 @@
+version: '3'
+services:
+    mongo:
+        image: mongo:latest
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASS}
+            - MONGO_INITDB_DATABASE=${POLY_MONGO_DB}
+            - MONGO_ROOT_USER=${MONGO_ROOT_USER}
+            - MONGO_ROOT_PASS=${MONGO_ROOT_PASS}
+            - MONGO_HOST=${MONGO_HOST}
+            - MONGO_PORT=${MONGO_PORT}
+            - POLY_MONGO_USER=${POLY_MONGO_USER}
+            - POLY_MONGO_PASS=${POLY_MONGO_PASS}
+        volumes: 
+            - ${MONGO_DB_DIR}:/data/db
+            - ${MONGO_INIT_SCRIPTS_DIR}:/docker-entrypoint-initdb.d
+        ports: 
+            - 27017:27017
+    mongo-express:
+        image: mongo-express:latest
+        ports: 
+            - 8081:8081
+        environment:
+            - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USER}
+            - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASS}
+        depends_on: 
+            - mongo
+    # redis:
+    #     image: redis:latest
+    #     ports: 
+    #         - 6379:6379

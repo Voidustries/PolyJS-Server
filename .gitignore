@@ -1,0 +1,23 @@
+# IDE related
+.vscode
+.idea
+
+# Temp Test Data TODO: Make some good test data
+test/data
+
+# Node Stuff
+package-lock.json
+node_modules
+
+# Build
+build
+
+# Debug
+npm-debug.log
+
+# Super Secrets
+.env
+.DS_Store
+
+# Scratch
+scratch/

@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Stone Monarch (https://gitlab.com/Stone-Monarch)",
+  "license": "GPLv3",
+  "dependencies": {
+    "@porla/libtorrent": "^0.24.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "connect-redis": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "libtorrent-rasterbar": "0.0.0",
+    "mongoose": "^5.11.9",
+    "redis": "^3.0.2",
+    "torrentapi": "^2.0.1",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
