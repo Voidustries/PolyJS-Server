@@ -24,3 +24,15 @@ any number of possible front ends to be developed. Built inside Docker of ease o
 
 <!-- DO NOT ADD YOURSELF. NEW CONTRIBUTORS ARE ADD USUALY WITHIN 24 HOURS -->
 ## Contributors
+
+<table>
+<tr>
+    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
+        <a href=https://github.com/StoneMonarch>
+            <img src=https://avatars3.githubusercontent.com/u/35647358?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=Josh Leubecher-Robinson/>
+            <br />
+            <sub style="font-size:14px"><b>Josh Leubecher-Robinson</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
